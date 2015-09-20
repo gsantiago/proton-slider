@@ -89,6 +89,13 @@ test('Offset', function (assert) {
   assert.strictEqual(this.slider.cells[2].getOffset(), offset3)
 })
 
+test('Width', function (assert) {
+  _.each(this.slider.getCells(), function (el, index) {
+    var width = (el.clientWidth / this.slider.viewport.clientWidth) * 100
+    assert.strictEqual(this.slider.cells[index].getWidth(), width)
+  }, this)
+})
+
 test('Insert', function (assert) {
   var viewport = this.slider.viewport
   var cell4 = createCell('4')
