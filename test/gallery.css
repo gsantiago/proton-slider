@@ -1,0 +1,9 @@
+.gallery {
+  max-width: 600px;
+}
+
+.cell {
+  width: 100%;
+  height: 100px;
+}
+

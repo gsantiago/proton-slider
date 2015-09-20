@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+}
+
+.gallery-container {
+  max-width: 600px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.gallery-prev,
+.gallery-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  border: none;
+  background-color: #ddd;
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+
+.gallery-prev {
+  left: 10px;
+}
+
+.gallery-next {
+  right: 10px;
+}
+
+.gallery {
+
+}
+
+.cell {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+}
+
+.cell:nth-child(2) {
+  background-color: darkred;
+}
+
+.cell:nth-child(3) {
+  background-color: darkblue;
+}
+
+.gallery-single-cells .cell {
+  width: 100%;
+}
+
+.gallery-three-cells .cell {
+  width: 33.3333%;
+}

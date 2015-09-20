@@ -1,0 +1,24 @@
+{
+  "name": "proton-slider",
+  "version": "0.0.0",
+  "description": "Minimalist, vanilla, lightweight and responsive slider plugin",
+  "author": "Guilherme Santiago <guilherme.santiago95@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "lodash": "^3.10.1",
+  },
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-stylus": "^2.0.6",
+    "gulp-uglify": "^1.4.0",
+    "gulp-util": "^3.0.6",
+    "nib": "^1.1.0",
+    "node-qunit-phantomjs": "^1.2.1",
+    "qunit-assert-classes": "^1.0.2",
+    "qunitjs": "^1.19.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

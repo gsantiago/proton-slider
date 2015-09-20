@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proton - Single Cell</title>
+  <link rel="stylesheet" href="../build/proton.css">
+  <link rel="stylesheet" href="./examples.css">
+</head>
+<body>
+
+  <div class="gallery-container">
+    <button class="gallery-prev"> < </button>
+    <button class="gallery-next"> > </button>
+    <div class="gallery gallery-single-cell">
+      <div class="cell">
+        <span>1</span>
+      </div>
+      <div class="cell">
+        <span>2</span>
+      </div>
+      <div class="cell">
+        <span>3</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="../build/proton.min.js"></script>
+  <script>
+    var slider = new Proton('.gallery-single-cell', {
+      btnPrev: '.gallery-prev',
+      btnNext: '.gallery-next'
+    })
+  </script>
+</body>
+</html>
