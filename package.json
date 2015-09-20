@@ -5,7 +5,7 @@
   "author": "Guilherme Santiago <guilherme.santiago95@gmail.com>",
   "private": true,
   "dependencies": {
-    "lodash": "^3.10.1",
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "browserify": "^11.0.1",
