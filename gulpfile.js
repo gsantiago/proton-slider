@@ -10,6 +10,7 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var gutil = require('gulp-util');
 var stylus = require('gulp-stylus');
+var standard = require('gulp-standard');
 
 
 // Browserify
@@ -53,6 +54,11 @@ gulp.task('css', function () {
 
 gulp.task('test', function () {
   qunit('./test/index.html');
+  return gulp.src(['./lib/*.js'])
+    .pipe(standard())
+    .pipe(standard.reporter('default', {
+      breakOnError: true
+    }))
 });
 
 
