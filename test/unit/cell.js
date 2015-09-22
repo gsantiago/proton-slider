@@ -125,6 +125,32 @@ test('Insert', function (assert) {
   assert.strictEqual(viewport.children[2], cell6)
 })
 
+test('Insert in a selected cell\'s position', function (assert) {
+  var cell4 = createCell('New cell')
+  var cell1 = this.slider.cells[0]
+
+  this.slider.insert(cell4, 0)
+
+  // Since the first cell already was selected, the cell4 should be
+  // selected and the cell1 unselected.
+  assert.ok(this.slider.cells[0].selected, 'cell 4 is selected')
+  assert.notOk(cell1.selected, 'cell 1 is unselected')
+
+  // Now let's select the third cell, insert a new cell and select it.
+
+  var cell5 = createCell('One more cell')
+  var cell3 = this.slider.cells[2]
+
+  this.slider.select(2)
+
+  assert.ok(cell3.selected, 'cell 3 is selected')
+
+  this.slider.insert(cell5, 2)
+
+  assert.ok(this.slider.cells[2], 'cell 5 is selected')
+  assert.notOk(cell3.selected, 'cell 3 is unselected')
+})
+
 test('Remove', function (assert) {
   var firstCell = this.slider.cells[0].el
   var secondCell = this.slider.cells[1]
