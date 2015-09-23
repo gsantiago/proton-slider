@@ -44,6 +44,20 @@ body {
   font-weight: bold;
   background-color: #000;
   color: #fff;
+  position: relative;
+}
+
+.cell.proton-is-selected:after {
+  content: "selected";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  background-color: hotpink;
+  line-height: 1;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
 }
 
 .cell:nth-child(2) {
@@ -54,10 +68,27 @@ body {
   background-color: darkblue;
 }
 
+.cell:nth-child(4) {
+  background-color: gray;
+}
+
+.cell:nth-child(5) {
+  background-color: red;
+}
+
+.cell:nth-child(6) {
+  background-color: blue;
+}
+
 .gallery-single-cells .cell {
   width: 100%;
 }
 
 .gallery-three-cells .cell {
   width: 33.3333%;
+}
+
+.gallery-three-cells-margin .cell {
+  width: 33.33%;
+  margin: 0 10px;
 }

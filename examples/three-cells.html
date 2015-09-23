@@ -9,9 +9,34 @@
 <body>
 
   <div class="gallery-container">
-    <button class="gallery-prev"> < </button>
-    <button class="gallery-next"> > </button>
+    <button class="gallery-prev slider1-prev"> < </button>
+    <button class="gallery-next slider1-next"> > </button>
     <div class="gallery gallery-three-cells">
+      <div class="cell">
+        <span>1</span>
+      </div>
+      <div class="cell">
+        <span>2</span>
+      </div>
+      <div class="cell">
+        <span>3</span>
+      </div>
+      <div class="cell">
+        <span>4</span>
+      </div>
+      <div class="cell">
+        <span>5</span>
+      </div>
+      <div class="cell">
+        <span>6</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-container">
+    <button class="gallery-prev slider2-prev"> < </button>
+    <button class="gallery-next slider2-next"> > </button>
+    <div class="gallery gallery-three-cells-margin">
       <div class="cell">
         <span>1</span>
       </div>
@@ -36,9 +61,16 @@
   <script src="../build/proton.min.js"></script>
   <script>
     var slider = new Proton('.gallery-three-cells', {
-      btnPrev: '.gallery-prev',
-      btnNext: '.gallery-next'
+      btnPrev: '.slider1-prev',
+      btnNext: '.slider1-next'
     })
+
+    var slider2 = new Proton('.gallery-three-cells-margin', {
+      btnPrev: '.slider2-prev',
+      btnNext: '.slider2-next',
+      align: 'center'
+    })
+
   </script>
 </body>
 </html>
