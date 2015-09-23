@@ -168,3 +168,21 @@ test('Remove', function (assert) {
   // an index equals to 0.
   assert.strictEqual(secondCell.getIndex(), 0)
 })
+
+test('Remove a selected cell', function (assert) {
+  var cell2 = this.slider.cells[1]
+  var cell3 = this.slider.cells[2]
+
+  assert.strictEqual(this.slider.selectedCell.getIndex(), 0, 'first cell is selected')
+
+  this.slider.remove(0)
+  assert.strictEqual(this.slider.selectedCell.el, cell2.el)
+
+  this.slider.remove(0)
+  assert.strictEqual(this.slider.selectedCell.el, cell3.el)
+
+  // Remove the last cell.
+  this.slider.remove(0)
+
+  assert.notOk(this.slider.selectedCell, 'no cell is selected')
+})
