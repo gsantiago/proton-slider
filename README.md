@@ -21,6 +21,20 @@ TODO
 
 ## Usage
 
+Include the ```proton.css``` and ```proton.min.js``` in your page.
+
+Create a simple markup like the following:
+
+```html
+<div class="my-slider">
+  <div class="my-cell">...</div>
+  <div class="my-cell">...</div>
+  <div class="my-cell">...</div>
+</div>
+```
+
+Then, just create a new Proton instance:
+
 ```javascript
 var slider = new Proton('.my-slider', {
   /* options */
