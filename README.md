@@ -23,7 +23,7 @@ TODO
 
 Include the ```proton.css``` and ```proton.min.js``` in your page.
 
-Create a simple markup like the following:
+Create a simple markup like the following (the CSS classes doesn't matter):
 
 ```html
 <div class="my-slider">
